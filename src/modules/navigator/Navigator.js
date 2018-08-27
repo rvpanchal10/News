@@ -3,9 +3,15 @@ import { createTabNavigator, createStackNavigator } from 'react-navigation';
 import HomeViewContainer from '../screens/home/HomeViewContainer';
 import SearchViewContainer from '../screens/search/SearchViewContainer';
 
-// TabNavigator is nested inside StackNavigator
+// MainStack is nested inside StackNavigator
 export const MainScreenNavigator = createStackNavigator({
-  HomeView: { screen: HomeViewContainer },
+  HomeView: {
+    screen: HomeViewContainer,
+    navigationOptions: {
+      gesturesEnabled: false,
+      header: null,
+    }
+  },
   SearchView: { screen: SearchViewContainer }
 },
   { headerMode: 'screen' },
