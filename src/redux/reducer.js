@@ -1,15 +1,15 @@
-import {Map, fromJS} from 'immutable';
-import {loop, combineReducers} from 'redux-loop-symbol-ponyfill';
+import { Map, fromJS } from 'immutable';
+import { loop, combineReducers } from 'redux-loop-symbol-ponyfill';
 // import NavigatorStateReducer from '../modules/navigator/NavigatorState';
-import SessionStateReducer, {RESET_STATE} from '../modules/session/SessionState';
+import SessionStateReducer, { RESET_STATE } from '../modules/session/SessionState';
 // ## Generator Reducer Imports
+import NewsAuthStateReducer from '../services/newsAuthAPI';
 
 const reducers = {
   // ## Generator Reducers
-
+  newsAuth: NewsAuthStateReducer,
   // Navigator states
   // navigatorState: NavigatorStateReducer,
-
   session: SessionStateReducer
 
 };
