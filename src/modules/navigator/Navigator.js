@@ -6,11 +6,7 @@ import SearchViewContainer from '../screens/search/SearchViewContainer';
 // MainStack is nested inside StackNavigator
 export const MainScreenNavigator = createStackNavigator({
   HomeView: {
-    screen: HomeViewContainer,
-    navigationOptions: {
-      gesturesEnabled: false,
-      header: null,
-    }
+    screen: HomeViewContainer
   },
   SearchView: { screen: SearchViewContainer }
 },
@@ -22,7 +18,9 @@ export const MainScreenNavigator = createStackNavigator({
 const AppNavigator = createStackNavigator({
   MainScreenNavigator: {
     screen: MainScreenNavigator,
-    navigationOptions: {}
+    navigationOptions: {
+      header: null
+    }
   }
 });
 
