@@ -1,0 +1,61 @@
+{
+  "name": "News",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "jest",
+    "ios": "react-native run-ios",
+    "iPhoneX": "react-native run-ios --simulator=\"iPhone X\"",
+    "android": "react-native run-android",
+    "release": "cd android && ./gradlew assembleRelease"
+  },
+  "dependencies": {
+    "bluebird": "^3.5.1",
+    "event-emitter": "^0.3.5",
+    "immutable": "^3.8.2",
+    "react": "16.3.1",
+    "react-native": "0.55.4",
+    "react-native-image-progress": "^1.1.1",
+    "react-native-infinite-scroll-view": "^0.4.3",
+    "react-native-progress": "^3.5.0",
+    "react-native-simple-toast": "0.0.8",
+    "react-native-vector-icons": "^4.6.0",
+    "react-navigation": "^2.5.3",
+    "react-navigation-redux-helpers": "^2.0.2",
+    "react-redux": "^5.0.7",
+    "redux": "^4.0.0",
+    "redux-logger": "^3.0.6",
+    "redux-loop-symbol-ponyfill": "^2.2.2",
+    "redux-promise": "^0.6.0",
+    "redux-thunk": "^2.3.0",
+    "standard-http-error": "^2.0.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^8.2.5",
+    "babel-jest": "23.2.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-react-native": "4.0.0",
+    "babel-preset-stage-0": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "eslint": "^5.0.1",
+    "eslint-plugin-babel": "^5.1.0",
+    "eslint-plugin-react": "^7.10.0",
+    "fetch-mock": "^6.4.4",
+    "istanbul": "^0.4.5",
+    "jest": "23.2.0",
+    "plop": "^2.0.0",
+    "react-addons-test-utils": "^15.6.2",
+    "react-dom": "^16.4.1",
+    "react-native-mock": "^0.3.1",
+    "react-test-renderer": "^16.4.1",
+    "remote-redux-devtools": "^0.5.12",
+    "rimraf": "^2.6.2"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
